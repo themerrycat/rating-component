@@ -5,29 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color:#ffffff;}
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* My Code */
+
+    body {
+      background:hsl(216, 12%, 8%);
+    }
+
+    .rating-section {
+      background: grey;
+      width:35%;
+      border-radius:10px;
+      display:block;
+      text-align:center;
+      margin: 0 auto;
+      padding: 15px;
+      margin-top:250px;
+      background-color:hsl(213, 19%, 18%);
+      color:#fff;
+      font-family: 'Overpass', sans-serif;
+      }
+
+    /*
+    ul { 
+      list-style-type:none;
+      padding: 0;
+
+    }
+
+    ul li {
+      display:inline;
+      text-align:center;
+    }
+    */
+
+    h1, p {
+      text-align:left;
+      padding-left:20px;
+    }
+
+    p {
+      color:hsl(217, 12%, 63%);
+    }
+
+    button {
+      width:90%;
+      padding: 15px 25px;
+      border-radius:25px;
+      background-color:hsl(25, 97%, 53%);
+    }
+
+  .circle {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  background: #fff;
+  border: 3px solid #000;
+  color: #000;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+  }
+
+  .ratings {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+  }
   </style>
 </head>
 <body>
-
+<div class="rating-section">
   <!-- Rating state start -->
 
-  How did we do?
+  <h1>How did we do?</h1>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
 
-  1 2 3 4 5
+<div class="ratings">
+  <div class="circle">1</div>
+  <div class="circle">2</div>
+  <div class="circle">3</div>
+  <div class="circle">4</div>
+  <div class="circle">5</div>
+</div>
+  
 
-  Submit
+  <button>Submit</button>
 
   <!-- Rating state end -->
+</div>
 
   <!-- Thank you state start -->
 
